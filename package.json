@@ -1,0 +1,31 @@
+{
+  "name": "chronos-desktop",
+  "version": "1.0.0",
+  "description": "CHRONOS-OS: 3D System Telemetry & Quantum State Visualizer",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "threejs",
+    "webgl",
+    "gpgpu",
+    "cyberpunk",
+    "telemetry",
+    "shaders"
+  ],
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "start": "electron-vite preview"
+  },
+  "dependencies": {
+    "three": "^0.169.0",
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-vite": "^2.3.0",
+    "vite": "^5.4.11"
+  }
+}

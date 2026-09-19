@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <title>CHRONOS-OS</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="titlebar">
+    <div id="titlebar-drag">
+      <span class="titlebar-logo">◈ CHRONOS-OS</span>
+      <span class="titlebar-version">v1.0.0 // TELEMETRY SUITE</span>
+    </div>
+    <div id="titlebar-controls">
+      <button id="btn-minimize" class="tb-btn" title="Minimize">─</button>
+      <button id="btn-maximize" class="tb-btn" title="Maximize">□</button>
+      <button id="btn-close" class="tb-btn tb-close" title="Close">✕</button>
+    </div>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <div id="hud-overlay">
+    <div class="hud-panel hud-top-left">
+      <div class="hud-label">CPU LOAD</div>
+      <div class="hud-value" id="hud-cpu">0%</div>
+      <div class="hud-bar"><div class="hud-bar-fill" id="hud-cpu-bar"></div></div>
+      <div class="hud-sublabel" id="hud-cpu-model">—</div>
+    </div>
+
+    <div class="hud-panel hud-top-right">
+      <div class="hud-label">MEMORY</div>
+      <div class="hud-value" id="hud-mem">0%</div>
+      <div class="hud-bar"><div class="hud-bar-fill" id="hud-mem-bar"></div></div>
+      <div class="hud-sublabel" id="hud-mem-detail">— / —</div>
+    </div>
+
+    <div class="hud-panel hud-bottom-left">
+      <div class="hud-label">RENDER STATS</div>
+      <div class="hud-stat"><span>FPS:</span> <span id="hud-fps">0</span></div>
+      <div class="hud-stat"><span>Draw Calls:</span> <span id="hud-draws">0</span></div>
+      <div class="hud-stat"><span>Triangles:</span> <span id="hud-tris">0</span></div>
+      <div class="hud-stat"><span>Particles:</span> <span id="hud-particles">100,000</span></div>
+    </div>
+
+    <div class="hud-panel hud-bottom-right">
+      <div class="hud-label">SYSTEM LOG</div>
+      <div id="terminal-log"></div>
+    </div>
+
+    <div class="hud-panel hud-center-bottom">
+      <div class="hud-label">SYSTEM</div>
+      <div class="hud-stat"><span>Host:</span> <span id="hud-host">—</span></div>
+      <div class="hud-stat"><span>Uptime:</span> <span id="hud-uptime">—</span></div>
+      <div class="hud-stat"><span>Platform:</span> <span id="hud-platform">—</span></div>
+      <div class="hud-stat"><span>Cores:</span> <span id="hud-cores">—</span></div>
+    </div>
+
+    <div class="hud-controls">
+      <button id="btn-mute" class="hud-btn" title="Toggle Audio">🔊</button>
+      <button id="btn-benchmark" class="hud-btn" title="Run Benchmark">⚡</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
