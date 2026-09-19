@@ -46,7 +46,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/chronos-desktop.git
+   git clone https://github.com/Meet-pandya106/chronos-desktop.git
    cd chronos-desktop
    ```
 
