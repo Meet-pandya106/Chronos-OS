@@ -46,8 +46,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Meet-pandya106/chronos-desktop.git
-   cd chronos-desktop
+   git clone https://github.com/Meet-pandya106/Chronos-OS.git
+   cd Chronos-OS
    ```
 
 2. Install dependencies:
